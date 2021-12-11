@@ -1,0 +1,26 @@
+//Question
+//Create a class named 'Programming'. While creating an object of the class, if nothing is passed to it, then the message "I love programming languages" should be printed. 
+//If some String is passed to it, then in place of "programming languages" the name of that String variable should be printed.
+//For example, while creating the object if we pass "cpp", then "I love cpp" should be printed.
+//Solution
+#include<iostream>
+#include<string>
+using namespace std;
+class Programming{
+	string language;
+	public:
+		Programming(){
+			cout<<"I love programming languages"<<endl;
+		}
+		Programming(string str){
+			language=str;
+			cout<<"I love "<<language<<endl;
+		}
+	
+};
+int main(){
+    Programming p1;
+    Programming p2("Cpp");
+    
+    return 0;
+}
